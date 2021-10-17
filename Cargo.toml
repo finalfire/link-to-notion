@@ -1,7 +1,7 @@
 [package]
 name = "link-to-notion"
 version = "0.1.0"
-authors = ["Francesco <f.cauteruccio@gmail.com>"]
+authors = ["F. Cauteruccio <f.cauteruccio@gmail.com>"]
 edition = "2018"
 
 [[bin]]

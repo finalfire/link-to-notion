@@ -43,7 +43,7 @@ fn post_item(json_item: String, secret_key: String) -> Result<(), reqwest::Error
 fn main() {
     let arguments = App::new("Links to Notion (l2n)")
         .version("0.1")
-        .author("Francesco Cauteruccio <f.cauteruccio@gmail.com>")
+        .author("F. Cauteruccio <f.cauteruccio@gmail.com>")
         .about("Quick add a link to a table within a Notion page.")
         .arg(Arg::with_name("url")
             .help("URL to add")
