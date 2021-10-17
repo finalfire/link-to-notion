@@ -26,3 +26,5 @@ l2n https://bar.foo                     # example 2
 Here, `example 1` adds the link together with three tags; `example 2` only adds the link without specifying any tag.
 
 The following GIF shows a further example:
+
+![Example](example/example.gif)
