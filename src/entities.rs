@@ -1,7 +1,7 @@
 pub mod entity {
     use serde::{Serialize};
 
-    const TEXTUAL_TYPE: &'static str = "text";
+    const TEXTUAL_TYPE: &str = "text";
 
     #[derive(Serialize)]
     struct TextualContent {

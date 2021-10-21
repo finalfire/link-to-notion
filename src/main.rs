@@ -2,15 +2,13 @@ mod entities;
 use crate::entities::entity;
 
 use clap::{Arg, App};
-use reqwest;
 use reqwest::header::{AUTHORIZATION, CONTENT_TYPE};
 use select::document::Document;
 use select::predicate::Name;
 use std::env;
 
 fn make_request(url: &str) -> Result<String, reqwest::Error> {
-    let res = reqwest::blocking::get(url)?.text()?;
-    Ok(res)
+    reqwest::blocking::get(url)?.text()
 }
 
 fn retrieve_title(url: &str) -> String {
@@ -23,7 +21,7 @@ fn retrieve_title(url: &str) -> String {
         .first();
     
     match title_node {
-        Some(node) => format!("{}", node.text().trim()),
+        Some(node) => node.text().trim().to_string(),
         None => "(empty title)".to_string()
     }
 }
